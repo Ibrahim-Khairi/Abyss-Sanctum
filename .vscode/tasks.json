@@ -1,0 +1,39 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Build AbyssSanctum",
+      "type": "shell",
+      "command": "g++",
+        "args": [
+    "-std=c++17",
+    "-o", "AbyssSanctum.exe",
+    "glad.c",
+    "src/main.cpp",
+    "src/Shader.cpp",
+    "src/Camera.cpp",
+    "src/Mesh.cpp",
+    "src/CaveEnvironment.cpp",
+    "src/Crystal.cpp",
+    "src/CrystalCluster.cpp",
+    "src/RockFormation.cpp",
+    "src/CoralFormation.cpp",
+    "src/Bones.cpp",
+    "src/ParticleSystem.cpp",
+    "src/ObjModel.cpp",
+    "-I", "include",
+    "-L", "lib",
+    "-lglfw3",
+    "-lSOIL2",
+    "-lopengl32",
+    "-lgdi32",
+    "-luser32",
+    "-lkernel32",
+    "-Wall",
+    "-g"
+],
+      "group": { "kind": "build", "isDefault": true },
+      "problemMatcher": ["$gcc"]
+    }
+  ]
+}

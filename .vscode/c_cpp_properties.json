@@ -1,0 +1,18 @@
+{
+  "configurations": [
+    {
+      "name": "Win32",
+      "includePath": [
+        "${workspaceFolder}/include",
+        "${workspaceFolder}/include/glad",
+        "${workspaceFolder}/include/GLFW",
+        "${workspaceFolder}/include/glm",
+        "${workspaceFolder}/include/SOIL2"
+      ],
+      "compilerPath": "C:/mingw64/bin/g++.exe",
+      "cppStandard": "c++17",
+      "intelliSenseMode": "windows-gcc-x64"
+    }
+  ],
+  "version": 4
+}
